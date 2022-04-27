@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Quiz</title>
+        <title>Web Store</title>
+        <link href="styles.css" 
+        rel="stylesheet" 
+        type="text/css"/> 
+        <script type="text/javascript" src="formChecker.js"></script>
     </head>
     <body>
         <h1>Exercise 3: Web Store</h1>
+        <form action="customerBackend.php" method="post" onsubmit="return valid()">
+            <p>Username: <input type="text" name="username"></p>
+            <p>Password: <input type="password" name="password"></p>
+            <br>
+            <p>Enter the amount of each item to buy:</p>
+            <p>T-Shirt: <input type="text" name="tshirt"></p>
+            <p>Sweater: <input type="text" name="sweater"></p>
+            <p>Jacket: <input type="text" name="jacket"></p>
+            <br>
+            <p>Choose shipping:</p>
+            <p><input type="radio" name="shipping">Free 7 day</p>
+            <p><input type="radio" name="shipping">$50.00 over night</p>
+            <p><input type="radio" name="shipping">$5.00 three day</p>
+            <p><input type="reset"></p>
+            <p><input type="submit"></p>
+        </form>
     </body>
 </html>
